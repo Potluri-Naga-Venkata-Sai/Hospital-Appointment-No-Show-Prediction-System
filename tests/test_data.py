@@ -54,3 +54,4 @@ def test_chronological_split_leakage_safety():
 
     # Disjoint record verification
     assert len(train_df) + len(val_df) + len(test_df) == len(cleaned_df)
+

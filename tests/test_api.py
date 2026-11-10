@@ -136,3 +136,4 @@ def test_api_input_validation_negative_lead_time():
     }
     response = client.post("/predict", json=invalid_payload)
     assert response.status_code == 422, "API should return 422 Unprocessable Entity for negative lead time."
+

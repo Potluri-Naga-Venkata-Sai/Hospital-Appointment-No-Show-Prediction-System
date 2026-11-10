@@ -80,3 +80,4 @@
 1. **Screen Resolution:** 1080p (1920x1080).
 2. **Audio:** Use a headset mic to minimize background noise.
 3. **Pacing:** Speak at a steady, confident pace; pause briefly when switching tabs.
+

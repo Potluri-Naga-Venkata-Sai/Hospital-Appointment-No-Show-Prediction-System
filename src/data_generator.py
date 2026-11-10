@@ -268,3 +268,4 @@ def save_dataset(df: pd.DataFrame, file_path=RAW_DATA_PATH) -> None:
 if __name__ == "__main__":
     df = generate_synthetic_appointments()
     save_dataset(df)
+

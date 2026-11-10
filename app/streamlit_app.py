@@ -420,3 +420,4 @@ with tab4:
         4. **Zero Penalty Policy:** A high-risk score never deprioritizes care or auto-cancels a patient slot.
         """
     )
+

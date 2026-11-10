@@ -109,3 +109,4 @@ class ModelMetadataResponse(BaseModel):
     test_metrics: Dict[str, Any]
     feature_count: int
     cost_matrix: Dict[str, float]
+

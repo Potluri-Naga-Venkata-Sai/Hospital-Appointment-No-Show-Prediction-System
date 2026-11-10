@@ -282,3 +282,4 @@ All 12 automated unit and integration tests execute cleanly via `pytest`:
 ## Conclusion
 
 The Hospital Appointment No-Show Prediction system delivers a production-grade, mathematically defensible machine learning solution for hospital outpatient management. By rejecting naive 0.50 thresholds in favor of cost-optimal calibration, enforcing strict temporal split hygiene, and providing actionable SHAP explainability, the system provides hospital staff with a reliable decision-support tool that protects revenue, recovers capacity, and respects patient equity.
+

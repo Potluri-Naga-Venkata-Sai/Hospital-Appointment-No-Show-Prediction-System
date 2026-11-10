@@ -123,3 +123,4 @@ def get_feature_names(fitted_pipeline: Pipeline) -> List[str]:
             feature_names.extend(cat_names.tolist())
 
     return feature_names
+

@@ -30,3 +30,4 @@ def test_preprocessor_pipeline_transformation():
     # Verify feature names extraction
     feature_names = get_feature_names(preprocessor)
     assert len(feature_names) == X_trans.shape[1], "Extracted feature names length does not match column count."
+

@@ -125,3 +125,4 @@ def test_shap_local_explainability_instance():
         assert "shap_value" in item
         assert "direction" in item
         assert item["direction"] in ["Increases Risk", "Decreases Risk"]
+

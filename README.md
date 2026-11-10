@@ -46,6 +46,8 @@ flowchart TD
 
 ## 🚀 Quick Start Guide
 
+> For a dedicated, single-file walkthrough covering setup, execution, testing, troubleshooting, and sample cURL requests, see [HOW_TO_RUN.md](file:///Users/pnvsai/Projects/Algions%20AI%20-Project/HOW_TO_RUN.md).
+
 ### 1. Environment Setup
 Clone the repository and initialize the Python virtual environment:
 ```bash
@@ -246,3 +248,4 @@ Evaluated on the held-out test set ($N = 3,750$, strictly chronologically unseen
     ├── SUBMISSION_FORM.md             # Completed Algions assessment submission form
     └── DEMO_SCRIPT.md                 # 3-5 minute video presentation script
 ```
+

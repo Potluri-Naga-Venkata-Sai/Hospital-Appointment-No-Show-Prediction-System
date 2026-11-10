@@ -25,9 +25,9 @@
 ### Section 3: Code and Version
 | Field | Details |
 | :--- | :--- |
-| **Repository URL** | `https://github.com/pnvsai/hospital-noshow-prediction` |
+| **Repository URL** | `https://github.com/Potluri-Naga-Venkata-Sai/Hospital-Appointment-No-Show-Prediction-System` |
 | **Primary Branch** | `main` |
-| **Final Commit ID** | `e2d0da0` |
+| **Final Commit ID** | `6d10016` (or latest HEAD on main) |
 | **Access Permissions** | Public or reviewer access granted |
 
 ---
