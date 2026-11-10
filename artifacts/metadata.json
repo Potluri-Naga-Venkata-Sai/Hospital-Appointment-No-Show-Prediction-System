@@ -1,0 +1,207 @@
+{
+  "pipeline_version": "1.0.0",
+  "created_at": "2026-11-10T15:44:38.749692",
+  "random_seed": 42,
+  "split_summary": {
+    "total_records": 25000,
+    "train_records": 17500,
+    "val_records": 3750,
+    "test_records": 3750,
+    "train_date_range": [
+      "2025-01-01",
+      "2025-09-15"
+    ],
+    "val_date_range": [
+      "2025-09-15",
+      "2025-11-07"
+    ],
+    "test_date_range": [
+      "2025-11-07",
+      "2025-12-30"
+    ],
+    "train_no_show_rate": 0.18565714285714285,
+    "val_no_show_rate": 0.18533333333333332,
+    "test_no_show_rate": 0.1808
+  },
+  "champion_model": "Calibrated LightGBM (Isotonic)",
+  "optimal_threshold": 0.12,
+  "feature_count": 45,
+  "feature_names": [
+    "lead_time_days",
+    "patient_age",
+    "distance_miles",
+    "prior_appointments_count",
+    "prior_no_shows_count",
+    "prior_no_show_rate",
+    "transit_barrier_flag",
+    "is_same_day",
+    "booking_channel_Call Center",
+    "booking_channel_Mobile App",
+    "booking_channel_Online Portal",
+    "booking_channel_Walk-in Reception",
+    "clinic_department_Cardiology Consultation",
+    "clinic_department_Dental Care",
+    "clinic_department_Dermatology",
+    "clinic_department_General Medicine",
+    "clinic_department_Ophthalmology",
+    "clinic_department_Orthopedics",
+    "clinic_department_Pediatrics",
+    "clinic_department_Physiotherapy",
+    "appointment_day_of_week_Friday",
+    "appointment_day_of_week_Monday",
+    "appointment_day_of_week_Saturday",
+    "appointment_day_of_week_Thursday",
+    "appointment_day_of_week_Tuesday",
+    "appointment_day_of_week_Wednesday",
+    "appointment_time_slot_Early Afternoon (12:00-14:00)",
+    "appointment_time_slot_Early Morning (08:00-10:00)",
+    "appointment_time_slot_Late Afternoon (14:00-17:00)",
+    "appointment_time_slot_Late Morning (10:00-12:00)",
+    "financial_assistance_0",
+    "financial_assistance_1",
+    "sms_reminder_sent_0",
+    "sms_reminder_sent_1",
+    "is_first_appointment_0",
+    "is_first_appointment_1",
+    "lead_time_bucket_Extended (>30d)",
+    "lead_time_bucket_Long (15-30d)",
+    "lead_time_bucket_Medium (4-14d)",
+    "lead_time_bucket_Same-Day",
+    "lead_time_bucket_Short (1-3d)",
+    "age_group_Middle Aged",
+    "age_group_Pediatric",
+    "age_group_Senior",
+    "age_group_Young Adult"
+  ],
+  "model_comparison_test": {
+    "Dummy Baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.1808,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "brier_score": 0.1481,
+      "total_cost_usd": 81360.0
+    },
+    "Logistic Regression (L2)": {
+      "roc_auc": 0.65,
+      "pr_auc": 0.3107,
+      "f1": 0.3556,
+      "precision": 0.2576,
+      "recall": 0.5737,
+      "brier_score": 0.2307,
+      "total_cost_usd": 51495.0
+    },
+    "Random Forest": {
+      "roc_auc": 0.6145,
+      "pr_auc": 0.2644,
+      "f1": 0.2954,
+      "precision": 0.2743,
+      "recall": 0.3201,
+      "brier_score": 0.2005,
+      "total_cost_usd": 63930.0
+    },
+    "LightGBM (Champion)": {
+      "roc_auc": 0.6306,
+      "pr_auc": 0.2879,
+      "f1": 0.3411,
+      "precision": 0.2543,
+      "recall": 0.5177,
+      "brier_score": 0.2229,
+      "total_cost_usd": 54675.0
+    }
+  },
+  "champion_test_metrics_optimal": {
+    "threshold": 0.12,
+    "accuracy": 0.29546666666666666,
+    "precision": 0.19559826410415376,
+    "recall": 0.9306784660766961,
+    "f1": 0.32325819672131145,
+    "roc_auc": 0.6306562845685841,
+    "pr_auc": 0.271592775736243,
+    "brier_score": 0.14314441763127028,
+    "confusion_matrix": {
+      "tn": 477,
+      "fp": 2595,
+      "fn": 47,
+      "tp": 631
+    },
+    "financial_impact": {
+      "total_cost_usd": 44565.0,
+      "net_benefit_usd": 12225.0,
+      "cost_per_appointment_usd": 11.884
+    }
+  },
+  "champion_test_metrics_default": {
+    "threshold": 0.5,
+    "accuracy": 0.82,
+    "precision": 0.5428571428571428,
+    "recall": 0.028023598820058997,
+    "f1": 0.05329593267882188,
+    "roc_auc": 0.6306562845685841,
+    "pr_auc": 0.271592775736243,
+    "brier_score": 0.14314441763127028,
+    "confusion_matrix": {
+      "tn": 3056,
+      "fp": 16,
+      "fn": 659,
+      "tp": 19
+    },
+    "financial_impact": {
+      "total_cost_usd": 79320.0,
+      "net_benefit_usd": -77610.0,
+      "cost_per_appointment_usd": 21.152
+    }
+  },
+  "operational_cost_savings_usd": 34755.0,
+  "subgroup_fairness_summary": [
+    {
+      "Subgroup": "Age: <18 (Pediatric)",
+      "Count": 476,
+      "No-Show Rate": 0.17857142857142858,
+      "Precision": 0.1962864721485411,
+      "Recall": 0.8705882352941177,
+      "F1": 0.3203463203463203
+    },
+    {
+      "Subgroup": "Age: 18-34 (Young)",
+      "Count": 909,
+      "No-Show Rate": 0.20242024202420242,
+      "Precision": 0.22019464720194648,
+      "Recall": 0.9836956521739131,
+      "F1": 0.35984095427435386
+    },
+    {
+      "Subgroup": "Age: 35-64 (Adult)",
+      "Count": 1784,
+      "No-Show Rate": 0.18385650224215247,
+      "Precision": 0.19132029339853301,
+      "Recall": 0.9542682926829268,
+      "F1": 0.31873727087576376
+    },
+    {
+      "Subgroup": "Age: 65+ (Senior)",
+      "Count": 581,
+      "No-Show Rate": 0.13941480206540446,
+      "Precision": 0.16112531969309463,
+      "Recall": 0.7777777777777778,
+      "F1": 0.2669491525423729
+    },
+    {
+      "Subgroup": "Financial: No Assistance",
+      "Count": 3147,
+      "No-Show Rate": 0.17254528122020973,
+      "Precision": 0.18654775176514307,
+      "Recall": 0.9244935543278084,
+      "F1": 0.3104514533085962
+    },
+    {
+      "Subgroup": "Financial: Assistance Subsidy",
+      "Count": 603,
+      "No-Show Rate": 0.22388059701492538,
+      "Precision": 0.2411214953271028,
+      "Recall": 0.9555555555555556,
+      "F1": 0.3850746268656716
+    }
+  ]
+}
