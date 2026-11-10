@@ -6,9 +6,9 @@
 ### Section 1: Candidate Identification
 | Field | Details |
 | :--- | :--- |
-| **Candidate Full Name** | [Candidate Name / PNV Sai] |
-| **Registration Number** | [Candidate Registration Number] |
-| **University / Institutional Email** | [candidate.email@university.edu] |
+| **Candidate Full Name** | Naga Venkata Sai Potluri |
+| **Registration Number** | [Enter Registration Number] |
+| **University / Institutional Email** | pnvsai@example.com |
 
 ---
 
@@ -25,9 +25,9 @@
 ### Section 3: Code and Version
 | Field | Details |
 | :--- | :--- |
-| **Repository URL** | `https://github.com/pnvsai/hospital-noshow-prediction` *(or local workspace)* |
+| **Repository URL** | `https://github.com/pnvsai/hospital-noshow-prediction` |
 | **Primary Branch** | `main` |
-| **Final Commit ID** | `a1b2c3d4e5f67890abcdef1234567890abcdef12` |
+| **Final Commit ID** | `e2d0da0` |
 | **Access Permissions** | Public or reviewer access granted |
 
 ---
